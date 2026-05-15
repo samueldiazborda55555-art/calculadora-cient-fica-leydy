@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+center{
+    position: relative;
+    margin: 20px auto;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(243, 188, 229) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:5px solid #ffa4f0;
+    border-radius:20px;
+}
+
+#calculadora ul{
+    width: 320px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.numero{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:#fcf8ff(243, 188, 229) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+    
+}
+
+.simbolo{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(148, 155, 245) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+}
+
+.decimal{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(148, 155, 245) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+}
+
+.igual{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(148, 155, 245) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+}
+
+.operaciones{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(243, 188, 229) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #ffa4f0;
+    border-radius:20px;
+}
+
+#borrar{
+    margin: 20px auto;
+    width: 320px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(175, 167, 241) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+}
+
+#operaciones{
+    width: 320px;
+    height: 80px;
+    margin: 20px auto;
+    background: rgb(255, 255, 255);
+    border:5px solid #c485f7;
+    border-radius:20px;
+    text-align: right;
+    line-height:80px;
+    padding-right:20px;
+    font-size:40px;
+    font-weight:bold;
+}
+
+#calculadora{
+    width: 380px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgb(245, 216, 243);
+    border:5px solid #ff99ee;
+    border-radius:20px;
+    box-shadow: 0px 0px 15px rgba(72, 65, 85, 0.3);
+}
+
+li{
+    font-size: 28px;
+    cursor: pointer;    
+} 
+
+body{
+    background-color: rgb(253, 255, 209);
+}
