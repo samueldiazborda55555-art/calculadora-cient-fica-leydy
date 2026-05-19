@@ -139,3 +139,20 @@ li{
 body{
     background-color: rgb(253, 255, 209);
 }
+
+.numero,
+.simbolo,
+#borrar,
+#igual,
+#punto{
+    transition: transform 0.2s ease;
+}
+
+.numero:hover,
+.simbolo:hover,
+#borrar:hover,
+#igual:hover,
+#punto:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
