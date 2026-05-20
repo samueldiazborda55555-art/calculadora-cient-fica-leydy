@@ -73,6 +73,11 @@ let m ={
                     p.operaciones.innerHTML =
                         Math.cos(parseFloat(p.operaciones.innerHTML));
                 }
+
+                else if (digito == "x²") {
+                    p.operaciones.innerHTML =
+                        Math.pow(parseFloat(p.operaciones.innerHTML), 2);
+                }
                 break;
 
                 
