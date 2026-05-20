@@ -55,6 +55,19 @@ center{
     border-radius:20px;
 }
 
+.simboloespe{
+    margin: 20px auto;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height:60px ;
+    background:rgb(148, 155, 245) ;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border:4px solid #c485f7;
+    border-radius:20px;
+}
+
 .decimal{
     margin: 20px auto;
     width: 60px;
@@ -142,6 +155,7 @@ body{
 
 .numero,
 .simbolo,
+.simboloespe,
 #borrar,
 #igual,
 #punto{
@@ -150,6 +164,7 @@ body{
 
 .numero:hover,
 .simbolo:hover,
+.simboloespe:hover,
 #borrar:hover,
 #igual:hover,
 #punto:hover{

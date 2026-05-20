@@ -46,15 +46,31 @@ let m ={
             break;
             case "simbolo":
                 //console.log("simbolo")
-                p.operaciones.innerHTML += digito;
+                p.cantisignos ++;
+                if(p.cantisignos ==1){
+                    if(p.operaciones.innerHTML ==0){
+                        p.operaciones.innerHTML = 0;
+                    }
+                    else{
+                        p.operaciones.innerHTML += digito;
+                        p.canrdecimales= true
+                    }
+                }
+
+                
             break;
             case "decimal":
-                //conaole.log("decimal");
-                p.operaciones.innerHTML += digito;
-            break;
+                if(!p.cantdecimal){
+                    p.operaciones.innerHTML += digito;
+                    p.cantdecimal = true;
+                }
+
+break;
+            
             case "igual":
                 //console.log("igual");
                 p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
+                p.cantisignos = 0;
             break;
         }
     },
@@ -62,4 +78,27 @@ let m ={
         p.operaciones.innerHTML = 0;
     }
 }
+
+document.addEventListener("keydown", function(event){
+
+    let tecla = event.key;
+
+    if(!isNaN(tecla)){
+        m.calculadora("numero", tecla);
+    }
+
+    else if(tecla == "+" || tecla == "-" || tecla == "*" || tecla == "/"){
+        m.calculadora("simbolo", tecla);
+    }
+
+    else if(tecla == "."){
+        m.calculadora("decimal", tecla);
+    }
+
+    else if(tecla == "Enter"){
+        m.calculadora("igual", "=");
+    }
+
+});
+
 m.inicio()
