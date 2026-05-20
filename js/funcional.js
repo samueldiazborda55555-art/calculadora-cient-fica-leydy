@@ -64,7 +64,15 @@ let m ={
                     );
                 }
 
+                else if (digito == "sin") {
+                    p.operaciones.innerHTML =
+                        Math.sin(parseFloat(p.operaciones.innerHTML));
+                }
 
+                else if (digito == "cos") {
+                    p.operaciones.innerHTML =
+                        Math.cos(parseFloat(p.operaciones.innerHTML));
+                }
                 break;
 
                 
