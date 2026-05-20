@@ -57,7 +57,7 @@ let m ={
                     }
                 }
 
-            case "simboloespe":
+            case "simboloesp":
                 if (digito == "√") {
                     p.operaciones.innerHTML = Math.sqrt(
                         parseFloat(p.operaciones.innerHTML)
