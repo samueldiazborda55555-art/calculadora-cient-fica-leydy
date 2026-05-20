@@ -68,9 +68,12 @@ let m ={
 break;
             
             case "igual":
-                //console.log("igual");
+                if (p.operaciones.innerHTML.includes("/0")) {
+                    p.operaciones.innerHTML = "ERROR";
+                } else{
                 p.operaciones.innerHTML = eval(p.operaciones.innerHTML);
                 p.cantisignos = 0;
+            }
             break;
         }
     },
