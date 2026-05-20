@@ -57,15 +57,23 @@ let m ={
                     }
                 }
 
+            case "simboloespe":
+                if (digito == "√") {
+                    p.operaciones.innerHTML = Math.sqrt(
+                        parseFloat(p.operaciones.innerHTML)
+                    );
+                }
+
+
+                break;
+
                 
-            break;
             case "decimal":
                 if(!p.cantdecimal){
                     p.operaciones.innerHTML += digito;
                     p.cantdecimal = true;
                 }
-
-break;
+            break;
             
             case "igual":
                 if (p.operaciones.innerHTML.includes("/0")) {
